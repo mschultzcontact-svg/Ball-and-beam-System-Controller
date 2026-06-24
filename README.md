@@ -21,6 +21,10 @@ Hardwarekomponenten:
   - Datenblatt -> [AS5600 Sensor Datenblatt](./datenblätter/AS5600_Datenblatt.pdf)
 - Servormotor, Feetech STS3215:
   - Datenblatt -> [Feetech_STS3215 Datenblatt](./datenblätter/sts3215-smart-servo-Datenblatt.pdf)
+- Schrittmotor-Treibe, DM556:
+  - Datenblatt -> [DM556 Datenblatt](./datenblätter/DM556_Datenblatt.pdf)
+- Servo-Vereinzler, ... :
+  - Datenblatt -> ..
 - TFT Display:
   Datenblatt -> 
 

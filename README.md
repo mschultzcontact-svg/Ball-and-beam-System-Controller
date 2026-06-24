@@ -10,7 +10,7 @@ Inhalte:
 
 Hardwarekomponenten:
 - 2 Time of Flight Sensoren:
-  Shop ->
+  - Shop ->
   Datenblatt -> 
 - Hall Sensor, AS5600
   Shop -> https://shorturl.at/CvAJA

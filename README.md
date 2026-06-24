@@ -10,7 +10,8 @@ Inhalte:
 
 Hardwarekomponenten:
 - ESP32-S3-ETH:
-  - Shop: 
+  - Shop: https://shorturl.at/kggM6
+  - Datenblatt: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp-dev-kits-en-master-esp32.pdf
 - 2 Time of Flight Sensoren:
   - Shop ->
   - Datenblatt -> 

@@ -1,35 +1,232 @@
-(module "LSY876P2S11" (layer F.Cu)
-  (descr "LS Y876-P2S1-1-2")
-  (tags "LED")
-  (attr smd)
-  (fp_text reference LED** (at 0.000 -0) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text user %R (at 0.000 -0) (layer F.Fab)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text value "LSY876P2S11" (at 0.000 -0) (layer F.SilkS) hide
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_line (start -0.525 -1.1) (end 0.675 -1.1) (layer F.Fab) (width 0.2))
-  (fp_line (start 0.675 -1.1) (end 0.675 1.1) (layer F.Fab) (width 0.2))
-  (fp_line (start 0.675 1.1) (end -0.525 1.1) (layer F.Fab) (width 0.2))
-  (fp_line (start -0.525 1.1) (end -0.525 -1.1) (layer F.Fab) (width 0.2))
-  (fp_line (start -1.6 -2.8) (end 1.6 -2.8) (layer F.CrtYd) (width 0.1))
-  (fp_line (start 1.6 -2.8) (end 1.6 2.8) (layer F.CrtYd) (width 0.1))
-  (fp_line (start 1.6 2.8) (end -1.6 2.8) (layer F.CrtYd) (width 0.1))
-  (fp_line (start -1.6 2.8) (end -1.6 -2.8) (layer F.CrtYd) (width 0.1))
-  (fp_line (start -0.525 -1) (end -0.525 1) (layer F.SilkS) (width 0.1))
-  (fp_line (start 0.675 -1.1) (end 0.675 1.1) (layer F.SilkS) (width 0.1))
-  (fp_line (start -0.1 2.2) (end -0.1 2.2) (layer F.SilkS) (width 0.2))
-  (fp_line (start 0.1 2.2) (end 0.1 2.2) (layer F.SilkS) (width 0.2))
-  (fp_arc (start 0 2.2) (end -0.100 2.2) (angle -180) (layer F.SilkS) (width 0.2))
-  (fp_arc (start 0 2.2) (end 0.100 2.2) (angle -180) (layer F.SilkS) (width 0.2))
-  (pad 1 smd rect (at 0.000 1.45 90) (size 0.700 0.800) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0.000 -1.45 90) (size 0.700 0.800) (layers F.Cu F.Paste F.Mask))
-  (model LS_Y876-P2S1-1.stp
-    (at (xyz 0.001181102335805 0 0.047244096365501))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "LSY876P2S11"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "LS Y876-P2S1-1-2")
+	(tags "LED")
+	(property "Reference" "LED**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "69a91932-5722-4dff-a984-7eaca669f5a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "LSY876P2S11"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6b98f99e-f7f5-4bf4-80ac-bad7696e694d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1cdd8e07-d3d2-442e-9f34-53bd1dff4881")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5e8c1938-4b7c-4110-b5ef-012ad6d34387")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.525 -1)
+		(end -0.525 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "37d522a6-5645-40e8-a26b-a956756e19b2")
+	)
+	(fp_line
+		(start -0.1 2.7)
+		(end -0.1 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "98266d75-5d8d-42e0-8c34-2299a71f5177")
+	)
+	(fp_line
+		(start 0.1 2.7)
+		(end 0.1 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b9ae91a-3381-45f2-804d-a58d325e8c35")
+	)
+	(fp_line
+		(start 0.675 -1.1)
+		(end 0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "057f437b-9276-4ac7-9b1c-0d1a29f68f73")
+	)
+	(fp_arc
+		(start -0.1 2.7)
+		(mid 0 2.6)
+		(end 0.1 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c6b12c1b-3ad4-4471-873a-3073a148faf0")
+	)
+	(fp_arc
+		(start 0.1 2.7)
+		(mid 0 2.8)
+		(end -0.1 2.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6aef3d13-cc32-476e-90b2-b94823d28e94")
+	)
+	(fp_line
+		(start -1.6 -2.8)
+		(end 1.6 -2.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8ec00b44-cc47-4a13-a461-968e1b17be98")
+	)
+	(fp_line
+		(start -1.6 2.8)
+		(end -1.6 -2.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "863df000-6ce7-4e75-82d2-439ef0103bea")
+	)
+	(fp_line
+		(start 1.6 -2.8)
+		(end 1.6 2.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7d4eae33-7b2a-461a-8217-ff703ebad01f")
+	)
+	(fp_line
+		(start 1.6 2.8)
+		(end -1.6 2.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d6842827-4fe9-4fa7-b3af-8e6669bb5b5e")
+	)
+	(fp_line
+		(start -0.525 -1.1)
+		(end 0.675 -1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "821a2523-fe56-4fb7-a975-efc553f4d2a7")
+	)
+	(fp_line
+		(start -0.525 1.1)
+		(end -0.525 -1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6e4907e2-6fee-4d37-a204-d42a215df43f")
+	)
+	(fp_line
+		(start 0.675 -1.1)
+		(end 0.675 1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5aa61c86-9718-4ab8-ad8a-16227f52d1c1")
+	)
+	(fp_line
+		(start 0.675 1.1)
+		(end -0.525 1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "72532051-4d09-4e03-9eae-1c3b1d86b998")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d266d20c-48f4-46bd-b322-8ef9ad0d1ab0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 1.7 90)
+		(size 1.2 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6cf2ff68-4ecb-4704-b0b1-2cfccd003637")
+	)
+	(pad "2" smd rect
+		(at 0 -1.7 90)
+		(size 1.2 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c5e5ea5b-49b6-44ad-9c71-ff3f6b76de6b")
+	)
+	(embedded_fonts no)
+	(model "LS_Y876-P2S1-1.stp"
+		(offset
+			(xyz 0.02999999888 0 1.20000003)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

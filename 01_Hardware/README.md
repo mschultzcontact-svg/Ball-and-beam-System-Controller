@@ -28,18 +28,18 @@ Um harte Echtzeit-Regelung und Netzwerkkommunikation sauber zu trennen, basiert 
 
 ## 🛠️ Sensorik & Aktorik (Komponentenübersicht)
 
-Die Komponenten sind entlang des physikalischen Kugelverlaufs auf der 1,5 Meter langen Wippe aufgeteilt:
+Die mechatronischen Komponenten des Moduls teilen sich in sensorische Erfassungsorgane und ausführende Aktoren auf:
 
-* **Kugel-Vereinzelung:**
-  * **ToF-Sensor (Vereinzeler):** Optische Kugeldetektion im Einlauf via Lichtlaufzeit.
-  * **Servo-Vereinzeler:** Gibt die Kugel mechanisch für die Wippe frei.
-* **Die Wippen-Achse:**
-  * **Schrittmotor + DM556 Treiber:** Leistungsstarker Antrieb zur dynamischen Anpassung des Wippen-Neigungswinkels.
-  * **Kugelpositionssensor:** Kontinuierliche Positionsbestimmung der Kugel auf der Wippe (Ist-Wert für den Regler).
-  * **Servo-Wippe:** Optionale mechanische Unterstützung/Arretierung der Achse.
-* **Sicherheit & Begrenzung:**
-  * **Endschalter (Kugelaufnahme / -abgabe):** Registrieren mechanisch den Eintritt und das Verlassen der Kugel an den Bahnenden.
+* **Sensorik (Erfassung):**
+  * **Kugelpositionssensor:** Kontinuierliche Erfassung der exakten Ist-Position der Kugel auf der 1,5 Meter langen Wippe als primäre Regelgröße.
+  * **Hallsensor:** Erfasst den aktuellen Neigungswinkel der Wippen-Achse (Winkelmessung), um dem Regler die Orientierung der Bahn zurückzumelden.
+  * **ToF-Sensor:** Optische Abstandsmessung via Lichtlaufzeit zur Kugeldetektion im Einlaufbereich des Vereinzeler-Moduls.
+  * **Endschalter (Kugelaufnahme / Kugelabgabe):** Mechanische Taster zur sicheren Zustandserkennung, wenn eine Kugel das Modul betritt oder verlässt.
 
+* **Aktorik (Ausführung):**
+  * **Schrittmotor + DM556 Treiber:** Der Hauptantrieb zur hochpräzisen und dynamischen Verstellung des Neigungswinkels der Wippen-Linearachse.
+  * **Servo-Vereinzeler:** Steuert die mechanische Freigabe der wartenden Kugeln vor dem Eintritt in die Regelstrecke.
+  * **Servo-Wippe:** Ein zusätzlicher Stellmotor, welcher direkt an der Wippenmechanik für spezifische Stell- oder Arretieraufgaben zuständig ist.
 ---
 
 ## 📋 Datenblatt-Verzeichnis (Links)

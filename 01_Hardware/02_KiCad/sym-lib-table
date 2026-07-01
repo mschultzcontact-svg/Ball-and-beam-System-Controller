@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Marvin_Library") (type "KiCad") (uri "${KIPRJMOD}/Marvin_Library.kicad_sym") (options "") (descr ""))
+	(lib (name "Espressi") (type "KiCad") (uri "C:/Users/HP/Desktop/Marvin/Marvin-Studium/Semester 8/KiCad/Bibliotheken und Footprints/Espressif.kicad_sym") (options "") (descr ""))
+	(lib (name "Espressif (1)") (type "KiCad") (uri "C:/Users/HP/Desktop/Marvin/Marvin-Studium/Semester 8/KiCad/Bibliotheken und Footprints/Espressif (1).kicad_sym") (options "") (descr ""))
+)

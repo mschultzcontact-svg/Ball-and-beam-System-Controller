@@ -4,8 +4,8 @@ Dieser Ordner enthält die vollständige elektrotechnische Dokumentation, das Pl
 
 ## ⚡ Spannungsversorgung & Überwachung
 Die primäre Energieeinspeisung der Steuerbox erfolgt über ein **24V-Hauptnetzteil** (Hauptversorgung für den Schrittmotor). Für die Logik- und Sensorpegel wird die Spannung über zwei **DC-DC-Wandler** heruntergeregelt:
-* **24V ➡️ 9V:** Versorgung der Mikrocontroller (VIN).
-* **24V ➡️ 5V:** Versorgung der Sensorik, Servos und Peripherie.
+* **24V ➡️ 9V:** Versorgung des Servomotors Wippe.
+* **24V ➡️ 5V:** Versorgung der Servomotors Vereinzler.
 
 **Spannungsüberwachung:** Die drei Spannungsschienen (24V, 9V, 5V) werden permanent überwacht. Da die ESP32-Eingänge nur maximal 3,3V tolerieren, sind präzise **SMD-Widerstände als Spannungsteiler** vorgeschaltet.
 
